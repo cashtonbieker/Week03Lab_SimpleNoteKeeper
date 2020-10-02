@@ -16,8 +16,8 @@ public class Note implements Serializable{
     private String content;
     
     public Note(){
-        title = "Title";
-        content = "Editable Content";
+        title = "post title";
+        content = "post content";
     }
     
     public Note (String title, String content){
@@ -39,6 +39,10 @@ public class Note implements Serializable{
 
     public void setContent(String content) {
         this.content = content;
+    }
+    
+    public String toString(){
+        return title + "/n" + content;
     }
     
     
